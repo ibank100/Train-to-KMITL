@@ -1,0 +1,6 @@
+﻿  MyForm.cpp
+C:\Users\WIN\source\repos\TestProject3\TestProject3\MyForm.h(314): warning C4101: 'station_2': unreferenced local variable
+C:\Users\WIN\source\repos\TestProject3\TestProject3\MyForm.h(314): warning C4101: 'station_1': unreferenced local variable
+C:\Users\WIN\source\repos\TestProject3\TestProject3\MyForm.cpp(6): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  TestProject3.vcxproj -> C:\Users\WIN\source\repos\TestProject3\Debug\TestProject3.exe
