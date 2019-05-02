@@ -1,0 +1,769 @@
+#pragma once
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+#include <fstream>
+
+namespace TestProject3 {
+
+	using namespace System;
+	using namespace System::ComponentModel;
+	using namespace System::Collections;
+	using namespace System::Windows::Forms;
+	using namespace System::Data;
+	using namespace System::Drawing;
+
+	/// <summary>
+	/// Summary for MyForm
+	/// </summary>
+	public ref class MyForm : public System::Windows::Forms::Form
+	{
+	public:
+		MyForm(void)
+		{
+			InitializeComponent();
+			//
+			//TODO: Add the constructor code here
+			//
+		}
+
+	protected:
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		~MyForm()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::ComboBox^ start;
+
+
+
+
+
+
+
+	private: System::Windows::Forms::Button^ button1;
+
+	private: System::Windows::Forms::Label^ label3;
+
+
+
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::TextBox^ textBox2;
+
+
+	private: System::Windows::Forms::ComboBox^ end;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	protected:
+
+	private:
+		/// <summary>
+		/// Required designer variable.
+		/// </summary>
+		System::ComponentModel::Container ^components;
+
+#pragma region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		void InitializeComponent(void)
+		{
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->start = (gcnew System::Windows::Forms::ComboBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->end = (gcnew System::Windows::Forms::ComboBox());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->SuspendLayout();
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(222)));
+			this->label1->Location = System::Drawing::Point(343, 10);
+			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(292, 36);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"àÅ×Í¡Ê¶Ò¹Õ·Õè¤Ø³µéÍ§¡ÒÃ";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::TopCenter;
+			this->label1->Click += gcnew System::EventHandler(this, &MyForm::Label1_Click);
+			// 
+			// start
+			// 
+			this->start->FormattingEnabled = true;
+			this->start->Items->AddRange(gcnew cli::array< System::Object^  >(8) {
+				L"¤ÅÍ§µÑ¹", L"ÊØ¢ØÁÇÔ·71", L"ËÑÇËÁÒ¡", L"ºéÒ¹·ÑºªéÒ§",
+					L"«ÍÂÇÑ´ÅÒ¹ºØ­", L"ÅÒ´¡ÃÐºÑ§", L"¾ÃÐ¨ÍÁà¡ÅéÒ", L"ËÑÇµÐà¢é"
+			});
+			this->start->Location = System::Drawing::Point(152, 140);
+			this->start->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->start->Name = L"start";
+			this->start->Size = System::Drawing::Size(179, 24);
+			this->start->TabIndex = 4;
+			this->start->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::ComboBox1_SelectedIndexChanged);
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(350, 198);
+			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(285, 73);
+			this->button1->TabIndex = 6;
+			this->button1->Text = L"´ÙàÇÅÒÊ¶Ò¹Õ";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::Button1_Click_1);
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(5, 460);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(46, 17);
+			this->label3->TabIndex = 8;
+			this->label3->Text = L"Ê¶Ò¹Õ2";
+			this->label3->Click += gcnew System::EventHandler(this, &MyForm::Label3_Click);
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(5, 411);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(46, 17);
+			this->label2->TabIndex = 12;
+			this->label2->Text = L"Ê¶Ò¹Õ1";
+			// 
+			// textBox1
+			// 
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(222)));
+			this->textBox1->Location = System::Drawing::Point(113, 411);
+			this->textBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(833, 27);
+			this->textBox1->TabIndex = 13;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::TextBox1_TextChanged_1);
+			// 
+			// textBox2
+			// 
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(222)));
+			this->textBox2->Location = System::Drawing::Point(113, 453);
+			this->textBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(833, 27);
+			this->textBox2->TabIndex = 14;
+			// 
+			// end
+			// 
+			this->end->FormattingEnabled = true;
+			this->end->Items->AddRange(gcnew cli::array< System::Object^  >(8) {
+				L"¤ÅÍ§µÑ¹", L"ÊØ¢ØÁÇÔ·71", L"ËÑÇËÁÒ¡", L"ºéÒ¹·ÑºªéÒ§",
+					L"«ÍÂÇÑ´ÅÒ¹ºØ­", L"ÅÒ´¡ÃÐºÑ§", L"¾ÃÐ¨ÍÁà¡ÅéÒ", L"ËÑÇµÐà¢é"
+			});
+			this->end->Location = System::Drawing::Point(651, 140);
+			this->end->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->end->Name = L"end";
+			this->end->Size = System::Drawing::Size(179, 24);
+			this->end->TabIndex = 16;
+			// 
+			// textBox3
+			// 
+			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(222)));
+			this->textBox3->Location = System::Drawing::Point(113, 354);
+			this->textBox3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(833, 27);
+			this->textBox3->TabIndex = 17;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(5, 362);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(40, 17);
+			this->label4->TabIndex = 18;
+			this->label4->Text = L"¢ºÇ¹";
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(222)));
+			this->label5->Location = System::Drawing::Point(4, 316);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(78, 25);
+			this->label5->TabIndex = 19;
+			this->label5->Text = L"àÅ¢¢ºÇ¹";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(208, 94);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(59, 17);
+			this->label6->TabIndex = 20;
+			this->label6->Text = L"¨Ø´àÃÔèÁ¢Öé¹";
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(733, 94);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(36, 17);
+			this->label7->TabIndex = 21;
+			this->label7->Text = L"¨Ø´Å§";
+			this->label7->Click += gcnew System::EventHandler(this, &MyForm::Label7_Click);
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(222)));
+			this->label8->Location = System::Drawing::Point(373, 46);
+			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(233, 36);
+			this->label8->TabIndex = 22;
+			this->label8->Text = L"¤ÅÍ§µÑ¹ - ËÑÇµÐà¢é";
+			this->label8->TextAlign = System::Drawing::ContentAlignment::TopCenter;
+			// 
+			// MyForm
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(987, 518);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->label7);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->end);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->start);
+			this->Controls->Add(this->label1);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Name = L"MyForm";
+			this->Text = L"Train to KMITL";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
+			this->ResumeLayout(false);
+			this->PerformLayout();
+
+		}
+#pragma endregion
+	private: System::Void Label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void TextBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void Button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+private: System::Void ComboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+
+private: System::Void Button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	String^ n1 = start->Text;
+	String^ n2 = end->Text;
+	String^ n4;
+	String^ n5;
+
+
+	//ÀÒÉÒc//
+	char station_1[300], station_2[300];
+	int number_1, number_2;
+
+	if (n1 == "¤ÅÍ§µÑ¹")
+	{
+		number_1 = 10;
+		n4 = "06:36 | 07:40 | 07:40 | 08:26 | 10:40 | 12:37 | 13:24 | 15:52 | 17:02 | 17:29 | 18:11 | 18:47 | 18:52";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 100;
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | 10:43 | ——:—— | ——:—— | 15:54 | ——:—— | 17:33 | 18:13 | 18:49 | 18:56";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 100;
+			n5 = "06:43 | 07:49 | 07:49 | 08:35 | 10:49 | 12:44 | 13:30 | 15:59 | 17:09 | 17:40 | 18:18 | 18:54 | 19:02";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 100;
+			n5 = "06:48 | 07:57 | 07:57 | 08:44 | 10:56 | 12:50 | 13:36 | 16:05 | 17:15 | 17:47 | 18:24 | 19:00 | 19:09";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 100;
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | 16:08 | ——:—— | 17:53 | 18:29 | 19:03 | 19:13";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 100;
+			n5 = "06:55 | 08:06 | 08:06 | 08:51 | 11:02 | 12:57 | 13:42 | 16:12 | 17:22 | 17:58 | 18:34 | 19:07 | 19:17";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 100;
+			n5 = "07:00 | 08:10 | 08:10 | 08:55 | 11:07 | 13:01 | 13:46 | 16:16 | 17:26 | 18:04 | 18:39 | 19:11 | 19:22";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 100;
+			n5 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		}
+	}
+	// ------------------------------------------------------------------------------------------------------------------------------ //
+
+	else if (n1 == "ÊØ¢ØÁÇÔ·71")
+	{
+		number_1 = 10;
+		n4 = "——:—— | ——:—— | ——:—— | ——:—— | 10:43 | ——:—— | ——:—— | 15:54 | ——:—— | 17:33 | 18:13 | 18:49 | 18:56";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 1;
+			n4 = "07:34 | 06:56 | ——:—— | ——:—— | 08:02 | 13:42 | ——:—— | 17:47 | ——:—— | ——:—— | 17:47 | 20:27 | 21:05";
+			n5 = "07:39 | 07:02 | 09:48 | 11:38 | 08:05 | 13:45 | 16:42 | 17:51 | 19:15 | 15:03 | 17:51 | 20:30 | 21:08";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 100;
+			n5 = "06:43 | 07:49 | 07:49 | 08:35 | 10:49 | 12:44 | 13:30 | 15:59 | 17:09 | 17:40 | 18:18 | 18:54 | 19:02";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 100;
+			n5 = "06:48 | 07:57 | 07:57 | 08:44 | 10:56 | 12:50 | 13:36 | 16:05 | 17:15 | 17:47 | 18:24 | 19:00 | 19:09";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 100;
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | 16:08 | ——:—— | 17:53 | 18:29 | 19:03 | 19:13";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 100;
+			n5 = "06:55 | 08:06 | 08:06 | 08:51 | 11:02 | 12:57 | 13:42 | 16:12 | 17:22 | 17:58 | 18:34 | 19:07 | 19:17";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 100;
+			n5 = "07:00 | 08:10 | 08:10 | 08:55 | 11:07 | 13:01 | 13:46 | 16:16 | 17:26 | 18:04 | 18:39 | 19:11 | 19:22";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 100;
+			n5 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------------------ //
+
+	else if (n1 == "ËÑÇËÁÒ¡")
+	{
+		number_1 = 10;
+		n4 = "06:43 | 07:49 | 07:49 | 08:35 | 10:49 | 12:44 | 13:30 | 15:59 | 17:09 | 17:40 | 18:18 | 18:54 | 19:02";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 1;
+			n4 = "07:28 | 06:50 | 09:39 | 11:29 | 07:56 | 13:37 | 16:33 | 17:41 | 19:06 | 14:56 | 17:41 | 20:21 | 20:59";
+			n5 = "07:39 | 07:02 | 09:48 | 11:38 | 08:05 | 13:45 | 16:42 | 17:51 | 19:15 | 15:03 | 17:51 | 20:30 | 21:08";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 1;
+			n4 = "07:28 | 06:50 | 09:39 | 11:29 | 07:56 | 13:37 | 16:33 | 17:41 | 19:06 | 14:56 | 17:41 | 20:21 | 20:59";
+			n5 = "07:34 | 06:56 | ——:—— | ——:—— | 08:02 | 13:42 | ——:—— | 17:47 | ——:—— | ——:—— | 17:47 | 20:27 | 21:05";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 100;
+			n5 = "06:48 | 07:57 | 07:57 | 08:44 | 10:56 | 12:50 | 13:36 | 16:05 | 17:15 | 17:47 | 18:24 | 19:00 | 19:09";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 100;
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | 16:08 | ——:—— | 17:53 | 18:29 | 19:03 | 19:13";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 100;
+			n5 = "06:55 | 08:06 | 08:06 | 08:51 | 11:02 | 12:57 | 13:42 | 16:12 | 17:22 | 17:58 | 18:34 | 19:07 | 19:17";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 100;
+			n5 = "07:00 | 08:10 | 08:10 | 08:55 | 11:07 | 13:01 | 13:46 | 16:16 | 17:26 | 18:04 | 18:39 | 19:11 | 19:22";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 100;
+			n5 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------------------ //
+
+	else if (n1 == "ºéÒ¹·ÑºªéÒ§")
+	{
+		number_1 = 10;
+		n4 = "06:48 | 07:57 | 07:57 | 08:44 | 10:56 | 12:50 | 13:36 | 16:05 | 17:15 | 17:47 | 18:24 | 19:00 | 19:09";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 1;
+			n4 = "07:19 | 06:43 | 09:32 | 11:22 | 07:50 | 13:30 | 16:26 | 17:27 | 18:59 | 14:50 | 17:27 | 20:14 | 20:52";
+			n5 = "07:39 | 07:02 | 09:48 | 11:38 | 08:05 | 13:45 | 16:42 | 17:51 | 19:15 | 15:03 | 17:51 | 20:30 | 21:08";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 1;
+			n4 = "07:19 | 06:43 | 09:32 | 11:22 | 07:50 | 13:30 | 16:26 | 17:27 | 18:59 | 14:50 | 17:27 | 20:14 | 20:52";
+			n5 = "07:34 | 06:56 | ——:—— | ——:—— | 08:02 | 13:42 | ——:—— | 17:47 | ——:—— | ——:—— | 17:47 | 20:27 | 21:05";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 1;
+			n4 = "07:19 | 06:43 | 09:32 | 11:22 | 07:50 | 13:30 | 16:26 | 17:27 | 18:59 | 14:50 | 17:27 | 20:14 | 20:52";
+			n5 = "07:28 | 06:50 | 09:39 | 11:29 | 07:56 | 13:37 | 16:33 | 17:41 | 19:06 | 14:56 | 17:41 | 20:21 | 20:59";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 100;
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | 16:08 | ——:—— | 17:53 | 18:29 | 19:03 | 19:13";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 100;
+			n5 = "06:55 | 08:06 | 08:06 | 08:51 | 11:02 | 12:57 | 13:42 | 16:12 | 17:22 | 17:58 | 18:34 | 19:07 | 19:17";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 100;
+			n5 = "07:00 | 08:10 | 08:10 | 08:55 | 11:07 | 13:01 | 13:46 | 16:16 | 17:26 | 18:04 | 18:39 | 19:11 | 19:22";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 100;
+			n5 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------------------ //
+	else if (n1 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+	{
+		number_1 = 10;
+		n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | 16:08 | ——:—— | 17:53 | 18:29 | 19:03 | 19:13";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 1;
+			n4 = "07:14 | 06:38 | 09:26 | ——:—— | ——:—— | ——:—— | ——:—— | 17:21 | ——:—— | ——:—— | 17:21 | ——:—— | ——:——";
+			n5 = "07:39 | 07:02 | 09:48 | 11:38 | 08:05 | 13:45 | 16:42 | 17:51 | 19:15 | 15:03 | 17:51 | 20:30 | 21:08";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 1;
+			n4 = "07:14 | 06:38 | 09:26 | ——:—— | ——:—— | ——:—— | ——:—— | 17:21 | ——:—— | ——:—— | 17:21 | ——:—— | ——:——";
+			n5 = "07:34 | 06:56 | ——:—— | ——:—— | 08:02 | 13:42 | ——:—— | 17:47 | ——:—— | ——:—— | 17:47 | 20:27 | 21:05";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 1;
+			n4 = "07:14 | 06:38 | 09:26 | ——:—— | ——:—— | ——:—— | ——:—— | 17:21 | ——:—— | ——:—— | 17:21 | ——:—— | ——:——";
+			n5 = "07:28 | 06:50 | 09:39 | 11:29 | 07:56 | 13:37 | 16:33 | 17:41 | 19:06 | 14:56 | 17:41 | 20:21 | 20:59";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 1;
+			n4 = "07:14 | 06:38 | 09:26 | ——:—— | ——:—— | ——:—— | ——:—— | 17:21 | ——:—— | ——:—— | 17:21 | ——:—— | ——:——";
+			n5 = "07:19 | 06:43 | 09:32 | 11:22 | 07:50 | 13:30 | 16:26 | 17:27 | 18:59 | 14:50 | 17:27 | 20:14 | 20:52";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 100;
+			n5 = "06:55 | 08:06 | 08:06 | 08:51 | 11:02 | 12:57 | 13:42 | 16:12 | 17:22 | 17:58 | 18:34 | 19:07 | 19:17";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 100;
+			n5 = "07:00 | 08:10 | 08:10 | 08:55 | 11:07 | 13:01 | 13:46 | 16:16 | 17:26 | 18:04 | 18:39 | 19:11 | 19:22";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 100;
+			n5 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------------------ //
+	else if (n1 == "ÅÒ´¡ÃÐºÑ§")
+	{
+		number_1 = 10;
+		n4 = "06:55 | 08:06 | 08:06 | 08:51 | 11:02 | 12:57 | 13:42 | 16:12 | 17:22 | 17:58 | 18:34 | 19:07 | 19:17";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 1;
+			n4 = "07:10 | 06:34 | 09:20 | 11:15 | 07:42 | 13:23 | 16:18 | 17:15 | 18:51 | 14:42 | 17:15 | 20:07 | 20:45";
+			n5 = "07:39 | 07:02 | 09:48 | 11:38 | 08:05 | 13:45 | 16:42 | 17:51 | 19:15 | 15:03 | 17:51 | 20:30 | 21:08";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 1;
+			n4 = "07:10 | 06:34 | 09:20 | 11:15 | 07:42 | 13:23 | 16:18 | 17:15 | 18:51 | 14:42 | 17:15 | 20:07 | 20:45";
+			n5 = "07:34 | 06:56 | ——:—— | ——:—— | 08:02 | 13:42 | ——:—— | 17:47 | ——:—— | ——:—— | 17:47 | 20:27 | 21:05";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 1;
+			n4 = "07:10 | 06:34 | 09:20 | 11:15 | 07:42 | 13:23 | 16:18 | 17:15 | 18:51 | 14:42 | 17:15 | 20:07 | 20:45";
+			n5 = "07:28 | 06:50 | 09:39 | 11:29 | 07:56 | 13:37 | 16:33 | 17:41 | 19:06 | 14:56 | 17:41 | 20:21 | 20:59";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 1;
+			n4 = "07:10 | 06:34 | 09:20 | 11:15 | 07:42 | 13:23 | 16:18 | 17:15 | 18:51 | 14:42 | 17:15 | 20:07 | 20:45";
+			n5 = "07:19 | 06:43 | 09:32 | 11:22 | 07:50 | 13:30 | 16:26 | 17:27 | 18:59 | 14:50 | 17:27 | 20:14 | 20:52";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 1;
+			n4 = "07:10 | 06:34 | 09:20 | 11:15 | 07:42 | 13:23 | 16:18 | 17:15 | 18:51 | 14:42 | 17:15 | 20:07 | 20:45";
+			n5 = "07:14 | 06:38 | 09:26 | ——:—— | ——:—— | ——:—— | ——:—— | 17:21 | ——:—— | ——:—— | 17:21 | ——:—— | ——:——";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 100;
+			n5 = "07:00 | 08:10 | 08:10 | 08:55 | 11:07 | 13:01 | 13:46 | 16:16 | 17:26 | 18:04 | 18:39 | 19:11 | 19:22";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 100;
+			n5 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------------------ //
+	else if (n1 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+	{
+		number_1 = 10;
+		n4 = "07:00 | 08:10 | 08:10 | 08:55 | 11:07 | 13:01 | 13:46 | 16:16 | 17:26 | 18:04 | 18:39 | 19:11 | 19:22";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 1;
+			n4 = "07:04 | 06:28 | 09:14 | 11:10 | 07:37 | 13:18 | 16:12 | 17:09 | 18:45 | 14:37 | 17:09 | 20:02 | 20:40";
+			n5 = "07:39 | 07:02 | 09:48 | 11:38 | 08:05 | 13:45 | 16:42 | 17:51 | 19:15 | 15:03 | 17:51 | 20:30 | 21:08";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 1;
+			n4 = "07:04 | 06:28 | 09:14 | 11:10 | 07:37 | 13:18 | 16:12 | 17:09 | 18:45 | 14:37 | 17:09 | 20:02 | 20:40";
+			n5 = "07:34 | 06:56 | ——:—— | ——:—— | 08:02 | 13:42 | ——:—— | 17:47 | ——:—— | ——:—— | 17:47 | 20:27 | 21:05";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 1;
+			n4 = "07:04 | 06:28 | 09:14 | 11:10 | 07:37 | 13:18 | 16:12 | 17:09 | 18:45 | 14:37 | 17:09 | 20:02 | 20:40";
+			n5 = "07:28 | 06:50 | 09:39 | 11:29 | 07:56 | 13:37 | 16:33 | 17:41 | 19:06 | 14:56 | 17:41 | 20:21 | 20:59";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 1;
+			n4 = "07:04 | 06:28 | 09:14 | 11:10 | 07:37 | 13:18 | 16:12 | 17:09 | 18:45 | 14:37 | 17:09 | 20:02 | 20:40";
+			n5 = "07:19 | 06:43 | 09:32 | 11:22 | 07:50 | 13:30 | 16:26 | 17:27 | 18:59 | 14:50 | 17:27 | 20:14 | 20:52";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 1;
+			n4 = "07:04 | 06:28 | 09:14 | 11:10 | 07:37 | 13:18 | 16:12 | 17:09 | 18:45 | 14:37 | 17:09 | 20:02 | 20:40";
+			n5 = "07:14 | 06:38 | 09:26 | ——:—— | ——:—— | ——:—— | ——:—— | 17:21 | ——:—— | ——:—— | 17:21 | ——:—— | ——:——";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 1;
+			n4 = "07:04 | 06:28 | 09:14 | 11:10 | 07:37 | 13:18 | 16:12 | 17:09 | 18:45 | 14:37 | 17:09 | 20:02 | 20:40";
+			n5 = "07:10 | 06:34 | 09:20 | 11:15 | 07:42 | 13:23 | 16:18 | 17:15 | 18:51 | 14:42 | 17:15 | 20:07 | 20:45";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 100;
+			n5 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		}
+	}
+
+	// ------------------------------------------------------------------------------------------------------------------------------ //
+	else if (n1 == "ËÑÇµÐà¢é")
+	{
+		number_1 = 10;
+		n4 = "07:03 | 08:14 | 08:14 | 08:57 | 11:09 | 13:04 | 13:48 | 16:18 | 17:30 | 18:07 | 18:42 | 19:13 | 19:24";
+		if (n2 == "¤ÅÍ§µÑ¹")
+		{
+			number_2 = 1;
+			n4 = "07:01 | 06:26 | 09:11 | 11:07 | 07:35 | 13:16 | 16:09 | 17:06 | 18:42 | 14:35 | 17:06 | 19:59 | 20:38";
+			n5 = "07:39 | 07:02 | 09:48 | 11:38 | 08:05 | 13:45 | 16:42 | 17:51 | 19:15 | 15:03 | 17:51 | 20:30 | 21:08";
+		}
+		else if (n2 == "ÊØ¢ØÁÇÔ·71")
+		{
+			number_2 = 1;
+			n4 = "07:01 | 06:26 | 09:11 | 11:07 | 07:35 | 13:16 | 16:09 | 17:06 | 18:42 | 14:35 | 17:06 | 19:59 | 20:38";
+			n5 = "07:34 | 06:56 | ——:—— | ——:—— | 08:02 | 13:42 | ——:—— | 17:47 | ——:—— | ——:—— | 17:47 | 20:27 | 21:05";
+		}
+		else if (n2 == "ËÑÇËÁÒ¡")
+		{
+			number_2 = 1;
+			n4 = "07:01 | 06:26 | 09:11 | 11:07 | 07:35 | 13:16 | 16:09 | 17:06 | 18:42 | 14:35 | 17:06 | 19:59 | 20:38";
+			n5 = "07:28 | 06:50 | 09:39 | 11:29 | 07:56 | 13:37 | 16:33 | 17:41 | 19:06 | 14:56 | 17:41 | 20:21 | 20:59";
+		}
+		else if (n2 == "ºéÒ¹·ÑºªéÒ§")
+		{
+			number_2 = 1;
+			n4 = "07:01 | 06:26 | 09:11 | 11:07 | 07:35 | 13:16 | 16:09 | 17:06 | 18:42 | 14:35 | 17:06 | 19:59 | 20:38";
+			n5 = "07:19 | 06:43 | 09:32 | 11:22 | 07:50 | 13:30 | 16:26 | 17:27 | 18:59 | 14:50 | 17:27 | 20:14 | 20:52";
+		}
+		else if (n2 == "«ÍÂÇÑ´ÅÒ¹ºØ­")
+		{
+			number_2 = 1;
+			n4 = "07:01 | 06:26 | 09:11 | 11:07 | 07:35 | 13:16 | 16:09 | 17:06 | 18:42 | 14:35 | 17:06 | 19:59 | 20:38";
+			n5 = "07:14 | 06:38 | 09:26 | ——:—— | ——:—— | ——:—— | ——:—— | 17:21 | ——:—— | ——:—— | 17:21 | ——:—— | ——:——";
+		}
+		else if (n2 == "ÅÒ´¡ÃÐºÑ§")
+		{
+			number_2 = 1;
+			n4 = "07:01 | 06:26 | 09:11 | 11:07 | 07:35 | 13:16 | 16:09 | 17:06 | 18:42 | 14:35 | 17:06 | 19:59 | 20:38";
+			n5 = "07:10 | 06:34 | 09:20 | 11:15 | 07:42 | 13:23 | 16:18 | 17:15 | 18:51 | 14:42 | 17:15 | 20:07 | 20:45";
+		}
+		else if (n2 == "¾ÃÐ¨ÍÁà¡ÅéÒ")
+		{
+			number_2 = 1;
+			n4 = "07:01 | 06:26 | 09:11 | 11:07 | 07:35 | 13:16 | 16:09 | 17:06 | 18:42 | 14:35 | 17:06 | 19:59 | 20:38";
+			n5 = "07:04 | 06:28 | 09:14 | 11:10 | 07:37 | 13:18 | 16:12 | 17:09 | 18:45 | 14:37 | 17:09 | 20:02 | 20:40";
+		}
+		else if (n2 == "ËÑÇµÐà¢é")
+		{
+			number_2 = 10;
+			n4 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+			n5 = "——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:—— | ——:——";
+		}
+	}
+	if (number_1 == number_2)
+	{
+		MessageBox::Show("â»Ã´àÅ×Í¡Ê¶Ò¹Õ·ÕèµèÒ§¡Ñ¹¤ÃÑº");
+	}
+
+	if (number_1 < number_2)
+	{
+		textBox3->Text = "    275|     283|     285|     281|     367|     389|     279|     277|     391|     383|     371|     385|    381";
+		label4->Text = "à·ÕèÂÇä»";
+		label2->Text = n1;
+		label3->Text = n2;
+		textBox1->Text = n4;
+		textBox2->Text = n5;
+	}
+	else
+	{
+		textBox3->Text = "    372|     384|     278|     280|     388|     368|     282|     284|     276|     390|     286|     394|     386";
+		label4->Text = "à·ÕèÂÇ¡ÅÑº";
+		label2->Text = n1;
+		label3->Text = n2;
+		textBox1->Text = n4;
+		textBox2->Text = n5;
+	}
+	//ÀÒÉÒc//
+}
+
+private: System::Void TextBox1_TextChanged_1(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void Label3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void Label7_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+};
+}
