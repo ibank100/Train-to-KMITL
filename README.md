@@ -7,7 +7,7 @@
 ---
 # Poster
 
-![](A1%20(1)%20(1).jpg)
+![](poster.jpg)
 
 ---
 # Team Membars
