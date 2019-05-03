@@ -6,7 +6,7 @@
 
 # How to openfile
 
-<img src='README/sin.jpg'>
+<img src='README/sln.jpg'>
 การที่จะเปิดไฟล์นี้ได้นั้นจำเป็นต้องใช้โปรแกรม Visual studio และโหลดตัว CLR ถึงจะเปิดไฟล์นี้ได้
 <img src='README/clr.jpg'>
 
