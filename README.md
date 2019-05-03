@@ -4,6 +4,9 @@
 
 ---
 # How it works
+
+[![Watch the video](https://img.youtube.com/vi/q4WEdVW4fMY/maxresdefault.jpg)](https://youtu.be/q4WEdVW4fMY)
+
 ---
 # Poster
 
