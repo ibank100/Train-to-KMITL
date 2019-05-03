@@ -6,7 +6,7 @@
 
 # How to openfile
 
-<img src='README/sin.jpeg'>
+<img src='README/sin.jpg'>
 
 ---
 
