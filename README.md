@@ -6,7 +6,7 @@
 
 # How to openfile
 
-![](sin.jpg)
+<img src='README/sin.jpeg'>
 
 ---
 
