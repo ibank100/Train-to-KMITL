@@ -10,6 +10,9 @@
 การที่จะเปิดไฟล์นี้ได้นั้นจำเป็นต้องใช้โปรแกรม Visual studio และโหลดตัว CLR ถึงจะเปิดไฟล์นี้ได้
 <img src='README/clr.jpg'>
 
+นี้คือในส่วนของตัว Code ที่เป็นภาษาซี โดยจะอยู่ใน Tain to KMITL -> TestProject3 -> MyForm.h
+<img src='README/Myform.jpg'>
+
 ---
 
 # How it works
