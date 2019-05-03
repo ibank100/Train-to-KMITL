@@ -3,6 +3,13 @@
 คือแอปพลิเคชันที่ใช้เช็คตารางเวลาของรถไฟระหว่างสถานีคลองตัน ถึง หัวตะเข้
 
 ---
+
+# How to openfile
+
+![](sin.jpg)
+
+---
+
 # How it works
 
 [![Watch the video](https://img.youtube.com/vi/q4WEdVW4fMY/maxresdefault.jpg)](https://youtu.be/q4WEdVW4fMY)
